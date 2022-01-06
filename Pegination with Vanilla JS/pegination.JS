@@ -8,11 +8,19 @@ for(let i =0; i<tr.length; i++){
     arrayTr.push(tr[i]);
 }
 
-select.onchange = rowCount;
-function rowCount(e){
+
+//this three line with rowCount(e) will only work if you have single Select element in page
+// select.onchange = rowCount;
+// function rowCount(e){
+// let limit = parseInt(e.target.value); => Write Inside function
+// .....
+//-----------------------------------------------------------------------
+function rowCount(){
     let neil = ul.querySelectorAll('.pagination-page-list');
     neil.forEach(n=>n.remove());
-    let limit = parseInt(e.target.value);
+    // let limit = parseInt(e.target.value); //Only for one select tag in entire page
+    let element = document.getElementById('pegination-select');
+    let limit = parseInt(element.value);
     // console.log(e.target.tagName);
     // console.log(e.target.value);
     displaypage(limit);
@@ -131,5 +139,33 @@ function buttonGenerator(limit){
     document.getElementById('prev').onclick = nextElement;
     document.getElementById('next').onclick = nextElement;
 }
+
+// ------------------------------------------------------------------------------------------------------------
+
+// -------------------------------------Video Code----------------------------------------
+//     let z = 0;
+//     function nextElement()
+//     {
+//         if(z+limit >= arrayTr.length || z >= arrayTr.length){
+//             z = -limit;
+//         }
+//         if(this.id == 'next'){
+//             z == arrayTr.length - limit ? (z=0) : (z+= limit);
+//         }
+//         if(this.id == 'prev'){
+//             z == 0 ? arrayTr.length - limit : (z -= limit);
+//         }
+
+//         tbody.innerHTML = '';
+//         for(let c=z; c < z+limit; c++)
+//         {
+//             tbody.appendChild(arrayTr[c]);
+//         }
+//         // console.log(z);
+//     }
+    
+//     document.getElementById('prev').onclick = nextElement;
+//     document.getElementById('next').onclick = nextElement;
+// }
 
 // ------------------------------------------------------------------------------------------------------------

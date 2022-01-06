@@ -1,8 +1,4 @@
 /* -----------------CSS for table--------------- */
-tr{
-    border: 1px solid #e4e4e4;
-}
-
 th{
     background-color: #F9F9F9;
     color: #646464;
@@ -14,6 +10,9 @@ th a, td a{
 }
 th a:hover, td a:hover{
     color: #979797;
+}
+tr{
+    border: 5px solid black;
 }
 td{
     padding: 5px 14px;
