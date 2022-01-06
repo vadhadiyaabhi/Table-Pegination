@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pegination - Vanilla JS</title>
+
+    <!-- bootstrap css bundle -->
+    <link rel="stylesheet" href="public/bootstrap/css/bootstrap.min.css">
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="pegination.css">
+</head>
+<body>
+    <table class="" style="width: 100%;" id="myTable">
+        <thead class="">
+            <th width="23%"><a href="">Service Details <img src="public/Images/sort.png" alt=""></a></th>
+            <th width="32%"><a href="">Service Provider <img src="public/Images/sort.png" alt=""></a></th>
+            <th width="15%" class="text-center"><a href="">Payment <img src="public/Images/sort.png" alt=""></a>
+            </th>
+            <th width="15%" class="text-center"><a href="">Status <img src="public/Images/sort.png" alt=""></a>
+            </th>
+            <th width="15%" class="text-center">Rate SP</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="line-break">
+                        <a href="" class="fw-bold"><img src="public/Images/calendar.png" alt="">30/11/2021</a>
+                        12:00 - 18:00
+                    </div>
+                </td>
+                <td class="service-provider">
+                    <img src="public/Images/cap.png" alt="">
+                    <div class="sp-detail">
+                        <span class="fw-bold">Abhishek Patel 1</span> <br>
+                        <span class="rating-star">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-empty.svg" alt="">
+                            <span class="ratting-number">4</span>
+                        </span>
+                    </div>
+                </td>
+                <td class="payment td-center">€<span>62</span></td>
+                <td class="service-status text-center">
+                    <span class="completed">Completed</span>
+                    <!-- <span class="cancelled">Cancelled</span> -->
+                </td>
+                <td class="text-center"><a class="RateSP-button " data-toggle="modal" style="cursor: pointer"
+                        title="RateSP">RateSP</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="line-break">
+                        <a href="" class="fw-bold"><img src="public/Images/calendar.png" alt="">30/11/2021</a>
+                        12:00 - 18:00
+                    </div>
+                </td>
+                <td class="service-provider">
+                    <img src="public/Images/cap.png" alt="">
+                    <div class="sp-detail">
+                        <span class="fw-bold">Abhi Patel 2</span> <br>
+                        <span class="rating-star">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-empty.svg" alt="">
+                            <span class="ratting-number">4</span>
+                        </span>
+                    </div>
+                </td>
+                <td class="payment td-center">€<span>62</span></td>
+                <td class="service-status text-center">
+                    <!-- <span class="completed">Completed</span> -->
+                    <span class="cancelled">Cancelled</span>
+                </td>
+                <td class="text-center"><a class="RateSP-button " data-toggle="modal" style="cursor: pointer"
+                        title="RateSP">RateSP</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="line-break">
+                        <a href="" class="fw-bold"><img src="public/Images/calendar.png" alt="">30/11/2021</a>
+                        12:00 - 18:00
+                    </div>
+                </td>
+                <td class="service-provider">
+                    <img src="public/Images/cap.png" alt="">
+                    <div class="sp-detail">
+                        <span class="fw-bold">Abhishek Patidar 3</span> <br>
+                        <span class="rating-star">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-empty.svg" alt="">
+                            <span class="ratting-number">4</span>
+                        </span>
+                    </div>
+                </td>
+                <td class="payment td-center">€<span>62</span></td>
+                <td class="service-status text-center">
+                    <!-- <span class="completed">Completed</span> -->
+                    <span class="cancelled">Cancelled</span>
+                </td>
+                <td class="text-center"><a class="RateSP-button " data-toggle="modal" style="cursor: pointer"
+                        title="RateSP">RateSP</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="line-break">
+                        <a href="" class="fw-bold"><img src="public/Images/calendar.png" alt="">30/11/2021</a>
+                        12:00 - 18:00
+                    </div>
+                </td>
+                <td class="service-provider">
+                    <img src="public/Images/cap.png" alt="">
+                    <div class="sp-detail">
+                        <span class="fw-bold">Abhi 4444</span> <br>
+                        <span class="rating-star">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-empty.svg" alt="">
+                            <span class="ratting-number">4</span>
+                        </span>
+                    </div>
+                </td>
+                <td class="payment td-center">€<span>62</span></td>
+                <td class="service-status text-center">
+                    <span class="completed">Completed</span>
+                    <!-- <span class="cancelled">Cancelled</span> -->
+                </td>
+                <td class="text-center"><a class="RateSP-button " data-toggle="modal" style="cursor: pointer"
+                        title="RateSP">RateSP</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="line-break">
+                        <a href="" class="fw-bold"><img src="public/Images/calendar.png" alt="">30/11/2021</a>
+                        12:00 - 18:00
+                    </div>
+                </td>
+                <td class="service-provider">
+                    <img src="public/Images/cap.png" alt="">
+                    <div class="sp-detail">
+                        <span class="fw-bold">Patidar Abhi 555</span> <br>
+                        <span class="rating-star">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-empty.svg" alt="">
+                            <span class="ratting-number">4</span>
+                        </span>
+                    </div>
+                </td>
+                <td class="payment td-center">€<span>62</span></td>
+                <td class="service-status text-center">
+                    <span class="completed">Completed</span>
+                    <!-- <span class="cancelled">Cancelled</span> -->
+                </td>
+                <td class="text-center"><a class="RateSP-button " data-toggle="modal" style="cursor: pointer"
+                        title="RateSP">RateSP</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="line-break">
+                        <a href="" class="fw-bold"><img src="public/Images/calendar.png" alt="">30/11/2021</a>
+                        12:00 - 18:00
+                    </div>
+                </td>
+                <td class="service-provider">
+                    <img src="public/Images/cap.png" alt="">
+                    <div class="sp-detail">
+                        <span class="fw-bold"> Patel 66666</span> <br>
+                        <span class="rating-star">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-empty.svg" alt="">
+                            <span class="ratting-number">4</span>
+                        </span>
+                    </div>
+                </td>
+                <td class="payment td-center">€<span>62</span></td>
+                <td class="service-status text-center">
+                    <!-- <span class="completed">Completed</span> -->
+                    <span class="cancelled">Cancelled</span>
+                </td>
+                <td class="text-center"><a class="RateSP-button " data-toggle="modal" style="cursor: pointer"
+                        title="RateSP">RateSP</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="line-break">
+                        <a href="" class="fw-bold"><img src="public/Images/calendar.png" alt="">30/11/2021</a>
+                        12:00 - 18:00
+                    </div>
+                </td>
+                <td class="service-provider">
+                    <img src="public/Images/cap.png" alt="">
+                    <div class="sp-detail">
+                        <span class="fw-bold">XYZ Patel 7777</span> <br>
+                        <span class="rating-star">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-empty.svg" alt="">
+                            <span class="ratting-number">4</span>
+                        </span>
+                    </div>
+                </td>
+                <td class="payment td-center">€<span>62</span></td>
+                <td class="service-status text-center">
+                    <span class="completed">Completed</span>
+                    <!-- <span class="cancelled">Cancelled</span> -->
+                </td>
+                <td class="text-center"><a class="RateSP-button " data-toggle="modal" style="cursor: pointer"
+                        title="RateSP">RateSP</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="line-break">
+                        <a href="" class="fw-bold"><img src="public/Images/calendar.png" alt="">30/11/2021</a>
+                        12:00 - 18:00
+                    </div>
+                </td>
+                <td class="service-provider">
+                    <img src="public/Images/cap.png" alt="">
+                    <div class="sp-detail">
+                        <span class="fw-bold">Patel 8x8x8x</span> <br>
+                        <span class="rating-star">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-empty.svg" alt="">
+                            <span class="ratting-number">4</span>
+                        </span>
+                    </div>
+                </td>
+                <td class="payment td-center">€<span>62</span></td>
+                <td class="service-status text-center">
+                    <span class="completed">Completed</span>
+                    <!-- <span class="cancelled">Cancelled</span> -->
+                </td>
+                <td class="text-center"><a class="RateSP-button " data-toggle="modal" style="cursor: pointer"
+                        title="RateSP">RateSP</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="line-break">
+                        <a href="" class="fw-bold"><img src="public/Images/calendar.png" alt="">30/11/2021</a>
+                        12:00 - 18:00
+                    </div>
+                </td>
+                <td class="service-provider">
+                    <img src="public/Images/cap.png" alt="">
+                    <div class="sp-detail">
+                        <span class="fw-bold">Abhi 909090</span> <br>
+                        <span class="rating-star">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-empty.svg" alt="">
+                            <span class="ratting-number">4</span>
+                        </span>
+                    </div>
+                </td>
+                <td class="payment td-center">€<span>62</span></td>
+                <td class="service-status text-center">
+                    <!-- <span class="completed">Completed</span> -->
+                    <span class="cancelled">Cancelled</span>
+                </td>
+                <td class="text-center"><a class="RateSP-button " data-toggle="modal" style="cursor: pointer"
+                        title="RateSP">RateSP</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="line-break">
+                        <a href="" class="fw-bold"><img src="public/Images/calendar.png" alt="">30/11/2021</a>
+                        12:00 - 18:00
+                    </div>
+                </td>
+                <td class="service-provider">
+                    <img src="public/Images/cap.png" alt="">
+                    <div class="sp-detail">
+                        <span class="fw-bold">ABC XYZ</span> <br>
+                        <span class="rating-star">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-filled.svg" alt="">
+                            <img src="public/Images/star-ratting-empty.svg" alt="">
+                            <span class="ratting-number">4</span>
+                        </span>
+                    </div>
+                </td>
+                <td class="payment td-center">€<span>62</span></td>
+                <td class="service-status text-center">
+                    <span class="completed">Completed</span>
+                    <!-- <span class="cancelled">Cancelled</span> -->
+                </td>
+                <td class="text-center"><a class="RateSP-button " data-toggle="modal" style="cursor: pointer"
+                        title="RateSP">RateSP</a></td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <!-- pegination section -->
+    <div class="pegination">
+        <div class="pegination-rows">
+            Show <select name="" id="">
+                <option value="4">4</option>
+                <option value="2">2</option>
+                <option value="6">6</option>
+                <option value="8">8</option>
+                <option value="12">12</option>
+                <option value="15">30</option>
+            </select> Entries Showing Entries from <span id="from-entry"></span> to <span id="to-entry"></span>
+        </div>
+        <ul class="pegination-pages">
+            <li class="prev" id="prev"><a href="#">&#139;</a></li>
+            <li class="next" id="next"><a href="#">&#155;</a></li>
+        </ul>
+    </div>
+
+
+    <!-- ---------------custom JS file for pegination with Vanilla JS-------------- -->
+    <script src="pegination.JS"></script>
+</body>
+</html>
