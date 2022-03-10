@@ -8,6 +8,35 @@ for(let i =0; i<tr.length; i++){
     arrayTr.push(tr[i]);
 }
 
+// ==================Sort array based onn requirnment==================================
+// Define onclick method on <th> and based on that children <td> of <tr> write sorting function and call on click
+
+console.log(arrayTr[1]);
+
+function compare(a, b){
+    // console.log("compare function");
+    //console.log(a.children[1].innerHTML);
+    if(a.children[1].innerHTML.toLowerCase() < b.children[1].innerHTML.toLowerCase() ){
+        console.log(a);
+        return -1;
+    }
+    if( a.children[1].innerHTML.toLowerCase() > b.children[1].innerHTML.toLowerCase()){
+        return 1;
+    }
+    // if(a.innerHTML < b.innerHTML ){
+    //     console.log(a);
+    //     return -1;
+    // }
+    // if( a.innerHTML > b.innerHTML){
+    //     return 1;
+    // }
+    return 0;   
+}
+
+arrayTr.sort(compare);
+
+// ============================================================================================
+
 
 //this three line with rowCount(e) will only work if you have single Select element in page
 // select.onchange = rowCount;
